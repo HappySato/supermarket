@@ -1,12 +1,15 @@
 class Cart
   def initialize
+    @item = []
     @total = 0
   end
   def add(item)
-    @total = @total + item.price
+    @item << item
   end
 
   def total
-    @total
+    @item.inject(0)do|result, item|
+      result + item.price
+    end
   end
 end
