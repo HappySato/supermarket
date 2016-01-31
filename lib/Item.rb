@@ -4,10 +4,10 @@ class Item
   	@name = name
   	@price = price
   end
-  def name
-    @name
-  end
-  def price
-    @price
-  end
+  #def name
+  #  @name
+  #end
+  #def price
+  #  @price
+  #end    #要らぬ　リファクタリング
 end
